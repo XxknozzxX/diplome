@@ -12,7 +12,7 @@ var SizeJour = largeur / Nbjour
 fetch("../src/db/db_2025.json")
   .then(response => response.json())
   .then(data => {
-    // console.log(data);
+    console.log(data);
 
     const nbDeSaison = data.filter(d => d.type === "saison").length
 
