@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "px_reg";
+  src:
+    url("src/font/Px-Grotesk-Regular.woff") format("woff"),
+    url("src/font/Px-Grotesk-Regular.woff2") format("woff2");
+}
+
+/*  ===================================================
+                    VARIABLE
+    ===================================================*/
+
+:root {
+  --c-black: black;
+  --c-white: white;
+  --f-size: 16px;
+  --b-size: 1px;
+}
+
+
+/*  ===================================================
+                    BALISE DE BASE
+    ===================================================*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "px_reg";
+    font-size: var(--f-size);
+}
+
+a:link, a:visited {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: var(--main-color);
+}
+
+/*  ===================================================
+                    NAV
+    ===================================================*/
+
+nav {
+    z-index: 1;
+    position: fixed;
+    background-color: var(--c-white);
+    width: 100%;
+    bottom: 0px;
+    border: var(--c-black) var(--b-size) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_btn, #filter {
+    border-left: var(--c-black) var(--b-size) solid;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_menu > div.active {
+    background-color: var(--c-black);
+    color: var(--c-white);
+}
+
+.nav_menu > div.active > span {
+    background-color: var(--c-white);
+    color: var(--c-black);
+}
+
+.cont_choix_anne {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nb_filtre {
+    background-color: var(--c-black);
+    color: var(--c-white);
+}
+
+.d-nav {
+    display: none !important;
+}
+
+.btn_filtre {
+    border-left: var(--c-black) var(--b-size) solid;
+    min-width: 100px;
+    padding: 0px 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+/*  ===================================================
+                    timeline
+    ===================================================*/
+
+.saison {
+    background-color: var(--c-black);
+}
+
+.full_l {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: 0;
+}
+
+#timeline_wrap {
+    height: calc(100vh - 51px);
+}
+
+/*  ===================================================
+                    liste
+    ===================================================*/
+
+.liste_el {
+    display: block;
+    background-color: var(--c-white);
+    margin: 0px;
+    border-top: var(--b-size) var(--c-black) solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.liste_el:hover {
+    background-color: var(--c-black);
+    color: var(--c-white);
+    margin: 0px;
+    border-top: var(--b-size) var(--c-black) solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.liste_sz {
+    display: flex;
+}
+
+#liste_wrap {
+    margin: 0px 0px 400px 0px;
+}
+
+.liste_el_titre {
+    background-color: var(--c-black);
+    color: var(--c-white);
+}
+
+.liste_el_titre > p {
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+.saison_liste {
+    margin-left: 34.5px;
+    width: 300px;
+}
+
+.liste_el_titre {
+    padding-left: 34.5px;
+}
+
+.date_liste {
+    margin-right: 34.5px;
+}

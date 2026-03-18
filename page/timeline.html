@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <div id="timeline_wrap">
+        <!-- make_timeline.js -->
+    </div>
+
+    <nav id="NavID">
+        <div class="nav_option">
+            <div class="nav_btn cont_choix_anne">2025</div>
+        </div>
+        <div class="nav_menu">
+            <div class="d-nav btn_filtre">Inondations / crues / pluies</div>
+            <div class="d-nav btn_filtre">Cyclones / tempêtes / Typhon</div>
+            <div class="d-nav btn_filtre">Chaleur / sécheresse</div>
+            <div class="d-nav btn_filtre">feux de fôret / brûlis</div>
+            <div class="d-nav btn_filtre">Déforestation</div>
+            <div class="d-nav btn_filtre">agricole</div>
+            <div class="d-nav btn_filtre">Coraux</div>
+            <div class="d-nav btn_filtre">Cryosphère</div>
+            <div class="d-nav btn_filtre">Activités maritimes</div>
+
+            <div class="nav_btn"><a href="map.html">map</a></div>
+            <div class="nav_btn active"><a href="timeline.html">timeline</a></div>
+            <div class="nav_btn"><a href="liste.html">liste</a></div>
+            <div onclick="OpenFilter()" id="filter" class="">filtre <span class="nb_filtre">0</span></div>
+        </div>
+    </nav>
+
+<script src="../src/js/make_timeline.js"></script>
+<script src="../src/js/nav-open-filter.js"></script>
+</body>
+</html>
