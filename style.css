@@ -42,15 +42,18 @@ a:hover, a:active {
     ===================================================*/
 
 nav {
-    z-index: 1;
-    position: fixed;
     background-color: var(--c-white);
-    width: 100%;
-    bottom: 0px;
     border: var(--c-black) var(--b-size) solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.cont_nav_filtre {
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 
 .nav_menu {
@@ -109,19 +112,14 @@ nav {
     align-items: center ;
 }
 
-.d-nav {
-    display: none !important;
+#filter.open {
+    background-color: var(--c-black);
+    color: var(--c-white);
 }
 
-.btn_filtre {
-    border-left: var(--c-black) var(--b-size) solid;
-    min-width: 100px;
-    padding: 0px 10px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
+#filter.open > .nb_filtre {
+    background-color: var(--c-white);
+    color: var(--c-black);
 }
 
 .nav_option {
@@ -131,6 +129,41 @@ nav {
 .toggle_cont {
     border: none;
 }
+
+#filter_cont {
+    justify-content: end;
+    display: flex;
+    width: 100%;
+}
+
+.d-nav {
+    border-left: var(--c-black) var(--b-size) solid;
+    border-top: var(--c-black) var(--b-size) solid;
+    min-width: 80px;
+    min-height: 50px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--c-white);
+    display: none;
+}
+
+.d-nav.open {
+    display: flex;
+}
+
+.d-nav.close {
+    background-color: var(--c-black);
+    color: var(--c-white);
+}
+
+.d-nav.active {
+    background-color: var(--c-black);
+    color: var(--c-white);
+}
+
+
 
 /*  ===================================================
                     toggle
