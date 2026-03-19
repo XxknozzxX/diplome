@@ -294,6 +294,7 @@ input:checked + .slider:before {
 #australie_sud, #australie_nord, #amerique_sud, #amerique_nord,
 #amazonie, #foret_boreales, #arctique {
     display: none;
+    fill: var(--c-black) !important;
 }
 
 /* back terre */
@@ -312,3 +313,14 @@ input:checked + .slider:before {
     fill: #ccc;
 }
 
+.cont_map {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cont_map > svg {
+    margin-top: -80px;
+    transform: scale(1.3);
+    transform-origin: center center;
+}
