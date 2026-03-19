@@ -68,6 +68,17 @@ nav {
     align-items: center;
 }
 
+.cont_choix_anne {
+    border-left: none;
+    border-right: var(--c-black) var(--b-size) solid;
+}
+
+#years {
+    border: none;
+    outline: none;
+    font-size: var(--f-size);
+}
+
 .nav_menu > div.active {
     background-color: var(--c-black);
     color: var(--c-white);
@@ -89,6 +100,13 @@ nav {
 .nb_filtre {
     background-color: var(--c-black);
     color: var(--c-white);
+    font-size: 14px;
+    margin-left: 5px;
+    height: 17px;
+    width: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
 
 .d-nav {
