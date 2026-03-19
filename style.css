@@ -124,13 +124,83 @@ nav {
     white-space: nowrap;
 }
 
+.nav_option {
+    display: flex;
+}
+
+.toggle_cont {
+    border: none;
+}
+
+/*  ===================================================
+                    toggle
+    ===================================================*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: 0px;
+  background-color: var(--c-black);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: purple;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px purple;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
 
 /*  ===================================================
                     timeline
     ===================================================*/
 
-.saison {
+.saison_timeline {
     background-color: var(--c-black);
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .full_l {
@@ -138,11 +208,17 @@ nav {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    font-size: 0;
 }
 
 #timeline_wrap {
     height: calc(100vh - 51px);
+}
+
+.name_timeline, .zone_timeline {
+    margin: 0px;
+    color: var(--c-white);
+    z-index: 100;
+    display: none;
 }
 
 /*  ===================================================
@@ -197,3 +273,42 @@ nav {
 .date_liste {
     margin-right: 34.5px;
 }
+
+/*  ===================================================
+                    map
+    ===================================================*/
+
+/* hitbox */
+#hit_europe, #hit_asie, #hit_asie_sud, #hit_asie_sud_est,
+#hit_himalayas, #hit_afrique, #hit_afrique_central,
+#hit_ouest_afrique, #hit_moyen_orient, #hit_bassin_mediterraneen,
+#hit_australie_sud, #hit_australie_nord, #hit_amerique_sud, #hit_amerique_nord,
+#hit_amazonie, #hit_foret_boreales, #hit_arctique {
+    opacity: 0;
+}
+
+/* tout les régions */
+#europe, #asie, #asie_sud, #asie_sud_est,
+#himalayas, #afrique, #afrique_central,
+#ouest_afrique, #moyen_orient, #bassin_mediterraneen,
+#australie_sud, #australie_nord, #amerique_sud, #amerique_nord,
+#amazonie, #foret_boreales, #arctique {
+    display: none;
+}
+
+/* back terre */
+#terre_v2 > rect {
+    fill: #ccc;
+}
+
+/* les océan */
+#pacifique_ouest_wetern_, #pacific_est_central_Eastern_, 
+#mediterrane, #ocean_inden_sud, 
+#ocean_inden_nord, #atlentique {
+    display: none;
+}
+
+#water_v2 {
+    fill: #ccc;
+}
+

@@ -12,7 +12,6 @@ var SizeJour = largeur / Nbjour
 fetch("../src/db/db_2025.json")
   .then(response => response.json())
   .then(data => {
-    console.log(data);
 
     const nbDeSaison = data.filter(d => d.type === "saison").length
 
@@ -27,6 +26,7 @@ fetch("../src/db/db_2025.json")
             const start = saison.start;
             const end = saison.end;
             const nom = saison.nom;
+            const zone = saison.zone;
             
             const { DateStart, DateEnd } = prsDate(start, end);
 
@@ -44,11 +44,23 @@ fetch("../src/db/db_2025.json")
 
             let div2 = document.createElement("div");
             div.append(div2);
-            div2.classList.add("saison");
+            div2.classList.add("saison_timeline");
 
             div2.style.marginLeft = (decalage / Nbjour) * 100 + "%";
             div2.style.width = (NbjourTotal / Nbjour) * 100 + "%";
             div2.style.height = 100 + "%";
+
+            let p1 = document.createElement("p");
+            let p2 = document.createElement("p");
+
+            p1.classList.add("name_timeline");
+            p2.classList.add("zone_timeline");
+
+            div2.append(p1);
+            div2.append(p2);
+
+            p1.textContent = nom;
+            p2.textContent = "["+zone+"]";
 
             // console.log((hauteur / nbDeSaison) / hauteur * 100 + "%")
 
@@ -64,7 +76,7 @@ fetch("../src/db/db_2025.json")
                 
                 let div3 = document.createElement("div");
                 div.append(div3);
-                div3.classList.add("saison");
+                div3.classList.add("saison_timeline");
 
                 div3.style.marginLeft = (decalage / Nbjour) * 100 + '%';
                 div3.style.width = (NbjourTotal / Nbjour) * 100 + "%";
@@ -90,4 +102,34 @@ function prsDate(start, end) {
     let DateEnd = new Date (ye, me, de);
 
     return { DateStart, DateEnd };
+};
+
+function checkbox() {
+    const titre = document.getElementById("titre_timeline");
+    const zone = document.getElementById("zone_timeline");
+    const titre_p = document.querySelectorAll(".name_timeline");
+    const zone_p = document.querySelectorAll(".zone_timeline");
+
+
+    if(titre.checked == true){
+        titre_p.forEach(el => {
+            el.style.setProperty("display", "block", "important")
+        });
+    }else {
+        titre_p.forEach(el => {
+            el.style.setProperty("display", "none", "important")
+        });
+    }
+
+    if(zone.checked == true){
+        zone_p.forEach(el => {
+            el.style.setProperty("display", "block", "important")
+        });
+    }else {
+        zone_p.forEach(el => {
+            el.style.setProperty("display", "none", "important")
+        });
+    }
+
+
 };

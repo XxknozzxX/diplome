@@ -14,7 +14,17 @@
 
     <nav id="NavID">
         <div class="nav_option">
-            <div class="nav_btn cont_choix_anne">2025</div>
+            <div class="nav_btn cont_choix_anne">
+                <select name="years" id="years">
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                </select>
+            </div>
         </div>
         <div class="nav_menu">
             <div class="d-nav btn_filtre">Inondations / crues / pluies</div>
@@ -30,7 +40,7 @@
             <div class="nav_btn"><a href="map.html">map</a></div>
             <div class="nav_btn"><a href="timeline.html">timeline</a></div>
             <div class="nav_btn active"><a href="liste.html">liste</a></div>
-            <div onclick="OpenFilter()" id="filter" class="">filtre <span class="nb_filtre">0</span></div>
+            <div onclick="OpenFilter()" id="filter" class="">filtre <span class="nb_filtre">6</span></div>
         </div>
     </nav>
 
