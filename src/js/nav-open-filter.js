@@ -65,6 +65,6 @@ function applyFilters(id) {
             }
         }
     }
+
+    recalcHauteur();
 };
-
-

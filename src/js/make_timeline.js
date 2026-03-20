@@ -7,6 +7,7 @@ const hauteurNav = document.getElementById("NavID");
 const hauteur = hauteurPage - hauteurNav.offsetHeight
 const wrap = document.getElementById("timeline_wrap");
 var SizeJour = largeur / Nbjour
+let sectionID = 0
 
 
 fetch("../src/db/db_2025.json")
@@ -17,6 +18,8 @@ fetch("../src/db/db_2025.json")
 
 
     Object.entries(data).forEach(([categorie, saisons]) => { 
+
+        sectionID ++;
 
         saisons.forEach(saison => {
 
@@ -38,7 +41,9 @@ fetch("../src/db/db_2025.json")
             let div = document.createElement("div");
             wrap.append(div);
             div.classList.add("full_l");
-            div.style.height = (hauteur / nbDeSaison) / hauteur * 100 + "%";
+            div.classList.add("id" + sectionID);
+            recalcHauteur()
+            div.dataset.total = nbDeSaison;
 
             let div2 = document.createElement("div");
             div.append(div2);
@@ -80,6 +85,7 @@ fetch("../src/db/db_2025.json")
                 div3.style.width = (NbjourTotal / Nbjour) * 100 + "%";
                 div3.style.height = 100 + "%";
             }
+
         
     });
 
@@ -87,6 +93,17 @@ fetch("../src/db/db_2025.json")
 
 
 });
+
+function recalcHauteur() {
+    const visibles = document.querySelectorAll(".full_l:not(.hide)");
+    const nb = visibles.length;
+    if (nb === 0) return;
+
+    const hauteurDispo = hauteur; // variable déjà définie globalement
+    visibles.forEach(el => {
+        el.style.height = (hauteurDispo / nb) / hauteurDispo * 100 + "%";
+    });
+}
 
 
 function prsDate(start, end) {
