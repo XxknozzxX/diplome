@@ -13,16 +13,14 @@ fetch("../src/db/db_2025.json")
   .then(response => response.json())
   .then(data => {
 
-    const nbDeSaison = data.filter(d => d.type === "saison").length
+    const nbDeSaison = Object.values(data).flat().length
 
 
-    data.forEach(saison => {
+    Object.entries(data).forEach(([categorie, saisons]) => { 
 
-        const type = saison.type;
+        saisons.forEach(saison => {
 
-        if (type == "categorie"){
-        
-        }else {
+            const type = saison.type;
             const start = saison.start;
             const end = saison.end;
             const nom = saison.nom;
@@ -82,9 +80,12 @@ fetch("../src/db/db_2025.json")
                 div3.style.width = (NbjourTotal / Nbjour) * 100 + "%";
                 div3.style.height = 100 + "%";
             }
-        }
         
     });
+
+    }); // fin new 
+
+
 });
 
 

@@ -357,3 +357,35 @@ input:checked + .slider:before {
     transform: scale(1.3);
     transform-origin: center center;
 }
+
+/*  ===================================================
+                    filter
+    ===================================================*/
+
+.id1.hide {
+    display: none;
+}
+.id2.hide {
+    display: none;
+}
+.id3.hide {
+    display: none;
+}
+.id4.hide {
+    display: none;
+}
+.id5.hide {
+    display: none;
+}
+.id6.hide {
+    display: none;
+}
+.id7.hide {
+    display: none;
+}
+.id8.hide {
+    display: none;
+}
+.id9.hide {
+    display: none;
+}

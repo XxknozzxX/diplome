@@ -14,16 +14,16 @@
 
     <section class="cont_nav_filtre">
         <div id="filter_cont">
-            <div onclick="UseFilter(this)" class="d-nav">inondations / crues / pluies</div>
-            <div onclick="UseFilter(this)" class="d-nav">cyclones / tempêtes / typhon</div>
-            <div onclick="UseFilter(this)" class="d-nav">chaleur / sécheresse</div>
-            <div onclick="UseFilter(this)" class="d-nav">feux de fôret / brûlis</div>
-            <div onclick="UseFilter(this)" class="d-nav">déforestation</div>
-            <div onclick="UseFilter(this)" class="d-nav">agricole</div>
-            <div onclick="UseFilter(this)" class="d-nav">coraux</div>
-            <div onclick="UseFilter(this)" class="d-nav">cryosphère</div>
-            <div onclick="UseFilter(this)" class="d-nav">activités maritimes</div>
-            <div onclick="UseFilter(this)" class="d-nav close">close</div>
+            <div onclick="UseFilter(this, '1')" class="d-nav">inondations / crues / pluies</div>
+            <div onclick="UseFilter(this, '2')" class="d-nav">cyclones / tempêtes / typhon</div>
+            <div onclick="UseFilter(this, '3')" class="d-nav">chaleur / sécheresse</div>
+            <div onclick="UseFilter(this, '4')" class="d-nav">feux de fôret / brûlis</div>
+            <div onclick="UseFilter(this, '5')" class="d-nav">déforestation</div>
+            <div onclick="UseFilter(this, '6')" class="d-nav">agricole</div>
+            <div onclick="UseFilter(this, '7')" class="d-nav">coraux</div>
+            <div onclick="UseFilter(this, '8')" class="d-nav">cryosphère</div>
+            <div onclick="UseFilter(this, '9')" class="d-nav">activités maritimes</div>
+            <div onclick="OpenFilter()" class="d-nav close">close</div>
         </div>
         <nav id="NavID">
             <div class="nav_option">
@@ -43,7 +43,7 @@
                 <div class="nav_btn"><a href="map.html">map</a></div>
                 <div class="nav_btn"><a href="timeline.html">timeline</a></div>
                 <div class="nav_btn active"><a href="liste.html">liste</a></div>
-                <div onclick="OpenFilter()" id="filter">filtre <span class="nb_filtre">0</span></div>
+                <div onclick="OpenFilter()" id="filter">filtre <span id="span_nb_filter" class="nb_filtre">0</span></div>
             </div>
         </nav>
     </section>

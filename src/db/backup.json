@@ -1,0 +1,303 @@
+[
+  {
+    "nom": "inondations / crues / pluies",
+    "type": "categorie"
+  },
+  {
+    "nom": "inondations dues à la mousson",
+    "type": "saison",
+    "zone": "asie",
+    "start": "01.06.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "saison des pluies",
+    "type": "saison",
+    "zone": "ouest-africaine",
+    "start": "01.06.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "cyclones / tempêtes / typhon",
+    "type": "categorie"
+  },
+  {
+    "nom": "cyclonic season",
+    "type": "saison",
+    "zone": "océan indien sud",
+    "start": "01.01.25",
+    "end": "30.04.25",
+    "start2": "01.11.25",
+    "end2": "31.12.25"
+  },
+  {
+    "nom": "cyclonic season",
+    "type": "saison",
+    "zone": "océan indien nord",
+    "start": "01.04.25",
+    "end": "30.06.25",
+    "start2": "01.10.25",
+    "end2": "31.12.25"
+  },
+  {
+    "nom": "hurricane season",
+    "type": "saison",
+    "zone": "atlantique",
+    "start": "01.06.25",
+    "end": "30.11.25"
+  },
+  {
+    "nom": "hurricane season",
+    "type": "saison",
+    "zone": "pacifique est (et central)",
+    "start": "15.05.25",
+    "end": "30.11.25"
+  },
+  {
+    "nom": "hurricane season",
+    "type": "saison",
+    "zone": "pacifique ouest",
+    "start": "01.05.25",
+    "end": "30.11.25"
+  },
+  {
+    "nom": "chaleur / sécheresse",
+    "type": "categorie"
+  },
+  {
+    "nom": "sécheresse",
+    "type": "saison",
+    "zone": "europe & bassin méditerranéen",
+    "start": "01.06.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "sécheresse",
+    "type": "saison",
+    "zone": "moyen-orient",
+    "start": "01.05.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "sécheresse",
+    "type": "saison",
+    "zone": "afrique",
+    "start": "01.04.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "sécheresse",
+    "type": "saison",
+    "zone": "sud-ouest amérique et central",
+    "start": "01.06.25",
+    "end": "31.08.25"
+  },
+  {
+    "nom": "feux de fôret / brûlis",
+    "type": "categorie"
+  },
+  {
+    "nom": "feux de fôret",
+    "type": "saison",
+    "zone": "europe & bassin méditerranéen",
+    "start": "01.06.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "feux de fôret",
+    "type": "saison",
+    "zone": "amérique du nord",
+    "start": "31.05.25",
+    "end": "22.09.25"
+  },
+  {
+    "nom": "feux de fôret",
+    "type": "saison",
+    "zone": "forêts boréales",
+    "start": "01.05.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "feux de fôret",
+    "type": "saison",
+    "zone": "afrique",
+    "start": "01.05.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "feux de fôret",
+    "type": "saison",
+    "zone": "asie",
+    "start": "01.08.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "feux de fôret",
+    "type": "saison",
+    "zone": "australie nord",
+    "start": "01.07.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "feux de fôret",
+    "type": "saison",
+    "zone": "australie sud",
+    "start": "01.01.25",
+    "end": "31.03.25"
+  },
+  {
+    "nom": "brûlis",
+    "type": "saison",
+    "zone": "afrique",
+    "start": "01.01.25",
+    "end": "30.04.25"
+  },
+  {
+    "nom": "brûlis",
+    "type": "saison",
+    "zone": "amazonie",
+    "start": "01.08.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "brûlis",
+    "type": "saison",
+    "zone": "asie",
+    "start": "01.02.25",
+    "end": "30.04.25"
+  },
+  {
+    "nom": "brûlis",
+    "type": "saison",
+    "zone": "europe",
+    "start": "01.02.25",
+    "end": "31.03.25"
+  },
+  {
+    "nom": "déforestation",
+    "type": "categorie"
+  },
+  {
+    "nom": "déforestation",
+    "type": "saison",
+    "zone": "amazonie",
+    "start": "01.05.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "déforestation",
+    "type": "saison",
+    "zone": "afrique centrale",
+    "start": "01.12.25",
+    "end": "31.03.25",
+    "start2": "01.06.25",
+    "end2": "31.08.25"
+  },
+  {
+    "nom": "déforestation",
+    "type": "saison",
+    "zone": "asie du sud-est",
+    "start": "01.01.25",
+    "end": "30.04.25"
+  },
+  {
+    "nom": "agricole",
+    "type": "categorie"
+  },
+  {
+    "nom": "irrigation intensive",
+    "type": "saison",
+    "zone": "méditerranéennes",
+    "start": "01.04.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "irrigation intensive",
+    "type": "saison",
+    "zone": "asie du sud",
+    "start": "01.03.25",
+    "end": "30.06.25"
+  },
+  {
+    "nom": "irrigation intensive",
+    "type": "saison",
+    "zone": "moyen-orient",
+    "start": "01.01.25",
+    "end": "31.12.25"
+  },
+  {
+    "nom": "irrigation intensive",
+    "type": "saison",
+    "zone": "sud-ouest amérique et central",
+    "start": "01.03.25",
+    "end": "31.10.25"
+  },
+  {
+    "nom": "coraux",
+    "type": "categorie"
+  },
+  {
+    "nom": "blanchissement",
+    "type": "saison",
+    "zone": "grande barrière de corail",
+    "start": "01.01.25",
+    "end": "31.05.25"
+  },
+  {
+    "nom": "blanchissement",
+    "type": "saison",
+    "zone": "archipel de trat, golfe de thaïlande",
+    "start": "01.04.25",
+    "end": "31.05.25"
+  },
+  {
+    "nom": "blanchissement",
+    "type": "saison",
+    "zone": "mer des caraïbes, floride, mexique (yucatán), porto rico, belize",
+    "start": "01.06.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "cryosphère (banquise/glaciers)",
+    "type": "categorie"
+  },
+  {
+    "nom": "fonte de la banquise",
+    "type": "saison",
+    "zone": "arctique",
+    "start": "01.04.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "retrait glaciaire",
+    "type": "saison",
+    "zone": "himalaya",
+    "start": "01.03.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "activités maritimes & pêche",
+    "type": "categorie"
+  },
+  {
+    "nom": "pêche commerciale",
+    "type": "saison",
+    "zone": "nord pacifique",
+    "start": "01.05.25",
+    "end": "30.09.25"
+  },
+  {
+    "nom": "thon rouge",
+    "type": "saison",
+    "zone": "méditerranée",
+    "start": "01.05.25",
+    "end": "31.07.25"
+  },
+  {
+    "nom": "sardine",
+    "type": "saison",
+    "zone": "atlentique",
+    "start": "01.04.25",
+    "end": "31.10.25"
+  }
+]
